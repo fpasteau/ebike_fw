@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "beforeBuildTasks": [],
+    "afterBuildTasks": [],
+    "global": {
+        "device": "stm8",
+        "optimize-type": "balanced",
+        "out-debug-info": true
+    },
+    "c/cpp-compiler": {
+        "language-c": "sdcc11",
+        "misc-controls": "--out-fmt-elf"
+    },
+    "asm-compiler": {},
+    "linker": {
+        "$mainFileName": "main",
+        "output-format": "elf"
+    }
+}

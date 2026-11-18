@@ -1,0 +1,83 @@
+{
+  "name": "Ebike_fw",
+  "type": "C51",
+  "dependenceList": [],
+  "srcDirs": [
+    "src",
+    "StdPeriphLib/src"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "33b383837ee56231afa0c36a49d4290b"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        "<virtual_root>/vector.c",
+        "<virtual_root>/main.c",
+        "StdPeriphLib/src/stm8s_adc2.c",
+        "StdPeriphLib/src/stm8s_awu.c",
+        "StdPeriphLib/src/stm8s_beep.c",
+        "StdPeriphLib/src/stm8s_can.c",
+        "StdPeriphLib/src/stm8s_i2c.c",
+        "StdPeriphLib/src/stm8s_it.c",
+        "StdPeriphLib/src/stm8s_rst.c",
+        "StdPeriphLib/src/stm8s_spi.c",
+        "StdPeriphLib/src/stm8s_tim3.c",
+        "StdPeriphLib/src/stm8s_tim4.c",
+        "StdPeriphLib/src/stm8s_tim5.c",
+        "StdPeriphLib/src/stm8s_tim6.c",
+        "StdPeriphLib/src/stm8s_uart3.c",
+        "StdPeriphLib/src/stm8s_uart4.c",
+        "StdPeriphLib/src/stm8s_wwdg.c",
+        "StdPeriphLib/src/stm8s_uart1.c",
+        "src/PAS.c",
+        "src/gpio.c",
+        "src/ACAcontrollerState.c",
+        "src/ACAsetPoint.c",
+        "src/BOdisplay.c",
+        "src/cruise_control.c",
+        "src/display.c",
+        "src/display_kingmeter.c",
+        "src/SPEED.c",
+        "src/ACAcommons.c"
+      ],
+      "toolchain": "COSMIC_STM8",
+      "compileConfig": {
+        "linkerScript": "ebike_fw.lkf",
+        "options": "null"
+      },
+      "uploader": "STVP",
+      "uploadConfig": {
+        "deviceName": "STM8S105x6",
+        "bin": "${ExecutableName}.hex",
+        "eepromFile": "null",
+        "optionByteFile": "null"
+      },
+      "uploadConfigMap": {
+        "Custom": {
+          "bin": "",
+          "commandLine": "",
+          "eraseChipCommand": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "include",
+          "StdPeriphLib/inc"
+        ],
+        "libList": [],
+        "defineList": []
+      }
+    }
+  },
+  "version": "3.4"
+}
